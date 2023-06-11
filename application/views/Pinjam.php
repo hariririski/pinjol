@@ -62,7 +62,7 @@
             <div class="col-sm-12">
               <div class="card">
                 <div class="card-header pb-0">
-                  <h5>Tambah Pegawai</h5>
+                  <h5>Tambah Peminjaman</h5>
                 </div>
                 <form class="form theme-form">
                   <div class="card-body">
