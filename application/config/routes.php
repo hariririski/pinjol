@@ -54,6 +54,9 @@ $route['masuk'] = 'Masuk';
 $route['keluar'] = 'Masuk/keluar';
 $route['beranda'] = 'Beranda';
 $route['kecamatan_desa'] = 'Kecamatan_desa';
+$route['dokumen_layanan'] = 'Dokumen_layanan';
+$route['pegawai_user'] = 'Pegawai_user';
+$route['pinjam'] = 'Pinjam_kembali';
 
 $route['404_override'] = 'Home';
 $route['translate_uri_dashes'] = FALSE;

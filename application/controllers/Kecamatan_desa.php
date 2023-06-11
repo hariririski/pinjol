@@ -7,12 +7,15 @@ class Kecamatan_desa extends CI_Controller {
 			parent::__construct();
 			$this->load->helper('url');
 			$this->load->library('session');
-			//$this->load->database();
+			$this->load->database();
+			$this->load->model('M_kecamatan_desa');
 
 	}
 	public function index()
 	{
-		$this->load->view('Kecamatan_desa');
+		$data['data_kecamatan'] = $this->M_kecamatan_desa->lihat_kecamatan();
+		$data['data_desa'] = $this->M_kecamatan_desa->lihat_desa();
+		$this->load->view('Kecamatan_desa',$data);
 	}
 
 

@@ -13,7 +13,7 @@
             </li>
             <li class="sidebar-main-title">
               <div>
-                <h6>General             </h6>
+                <h6>General</h6>
               </div>
             </li>
             <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>beranda"><i data-feather="navigation-2"></i><span>Beranda</span></a></li>
@@ -23,19 +23,17 @@
                 <h6>Data</h6>
               </div>
             </li>
-            <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>beranda"><i data-feather="navigation-2"></i><span>Peminjaman</span></a></li>
-            <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>beranda"><i data-feather="navigation-2"></i><span>Beranda</span></a></li>
+            <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>pinjam"><i data-feather="navigation-2"></i><span>Peminjaman</span></a></li>
+            <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>data_peminjaman"><i data-feather="navigation-2"></i><span>Beranda</span></a></li>
             <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>beranda"><i data-feather="navigation-2"></i><span>Beranda</span></a></li>
             <li class="sidebar-main-title">
               <div>
                 <h6>Pengaturan</h6>
               </div>
             </li>
-            <li><a class="nav-link menu-title link-nav" href="landing-page.html"><i data-feather="navigation-2"></i><span>Data Umum</span></a></li>
             <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>kecamatan_desa"><i data-feather="file"></i><span>Data Kecamatan / Desa</span></a></li>
-            <li><a class="nav-link menu-title link-nav" href="sample-page.html"><i data-feather="file"></i><span>Data Pegawai & User</span></a></li>
-            <li><a class="nav-link menu-title link-nav" href="sample-page.html"><i data-feather="file"></i><span>Data Jenis & Layanan</span></a></li>
-            <li><a class="nav-link menu-title link-nav" href="sample-page.html"><i data-feather="file"></i><span>Data Jenis Permohon</span></a></li>
+            <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>pegawai_user"><i data-feather="file"></i><span>Data Pegawai & User</span></a></li>
+            <li><a class="nav-link menu-title link-nav" href="<?php echo base_url(); ?>dokumen_layanan"><i data-feather="file"></i><span>Data dokumen & Layanan</span></a></li>
 
           </ul>
         </div>

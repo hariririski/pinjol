@@ -9,7 +9,7 @@
   <meta name="author" content="pixelstrap">
   <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <title>Pinjol - Kecamatan dan Desa</title>
+  <title>Pinjol - Dokumen & layanan</title>
   <!-- Google font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
@@ -62,14 +62,14 @@
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-header pb-0">
-                  <h5>Tambah Kecamatan</h5>
+                  <h5>Tambah Jenis Dokumen</h5>
                 </div>
                 <form class="form theme-form">
                   <div class="card-body">
                     <div class="row">
                       <div class="col">
                         <div class="mb-3 row">
-                          <label class="col-sm-4 col-form-label">Nama Kecamatan</label>
+                          <label class="col-sm-4 col-form-label">Nama Dokumen</label>
                           <div class="col-sm-8">
                             <input class="form-control" type="text">
                           </div>
@@ -89,30 +89,14 @@
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-header pb-0">
-                  <h5>Tambah Desa</h5>
+                  <h5>Tambah Jenis Layanan</h5>
                 </div>
                 <form class="form theme-form">
                   <div class="card-body">
                     <div class="row">
                       <div class="col">
                         <div class="mb-3 row">
-                            <label class="col-sm-4 col-form-label" >Pilih Kecamatan</label>
-                            <div class="col-sm-8">
-                              <select class="js-example-basic-single col-sm-12">
-                                <optgroup label="Developer">
-                                  <option value="AL">Alabama</option>
-                                  <option value="WY">Wyoming</option>
-                                </optgroup>
-                                <optgroup label="Designer">
-                                  <option value="WY">Peter</option>
-                                  <option value="WY">Hanry Die</option>
-                                  <option value="WY">John Doe</option>
-                                </optgroup>
-                              </select>
-                            </div>
-                        </div>
-                        <div class="mb-3 row">
-                          <label class="col-sm-4 col-form-label">Nama Desa</label>
+                          <label class="col-sm-4 col-form-label">Nama Jenis Layanan</label>
                           <div class="col-sm-8">
                             <input class="form-control" type="text">
                           </div>
@@ -134,7 +118,7 @@
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-header pb-0">
-                  <h5>Data Kecamatan</h5>
+                  <h5>Data Dokumen</h5>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -142,19 +126,19 @@
                       <thead>
                         <tr>
                           <th>No</th>
-                          <th>Kecamatan</th>
+                          <th>Nama Dokumen</th>
                           <th>Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php
                           $i=0;
-                          foreach($data_kecamatan as $kecamatan){
+                          foreach($data_dokumen as $dokumen){
                           $i++;
                         ?>
                           <tr>
                             <td width="10%"><?php echo $i; ?></td>
-                            <td><?php echo $kecamatan->nama_kecamatan; ?></td>
+                            <td><?php echo $dokumen->nama_dokumen; ?></td>
                             <td width="30%">
                               <button type="button" class="btn btn-warning">Ubah</button>
                               <button type="button" class="btn btn-danger">Hapus</button>
@@ -165,7 +149,7 @@
                       <tfoot>
                         <tr>
                           <th>No</th>
-                          <th>Kecamatan</th>
+                          <th>Nama Dokumen</th>
                           <th>Aksi</th>
                         </tr>
                       </tfoot>
@@ -177,7 +161,7 @@
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-header pb-0">
-                  <h5>Data Desa</h5>
+                  <h5>Data Jenis Layanan</h5>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -185,21 +169,21 @@
                       <thead>
                         <tr>
                           <th>No</th>
-                          <th>Kecamatan</th>
-                          <th>Desa</th>
+                          <th>Jenis Layanan</th>
+                          <th>Hari</th>
                           <th>Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php
                           $i=0;
-                          foreach($data_desa as $desa){
+                          foreach($data_layanan as $layanan){
                           $i++;
                         ?>
                           <tr>
                             <td width="10%"><?php echo $i; ?></td>
-                            <td><?php echo $desa->nama_kecamatan; ?></td>
-                            <td><?php echo $desa->nama_desa; ?></td>
+                            <td><?php echo $layanan->nama_jenis_layanan; ?></td>
+                            <td><?php echo $layanan->hari; ?></td>
                             <td width="30%">
                               <button type="button" class="btn btn-warning">Ubah</button>
                               <button type="button" class="btn btn-danger">Hapus</button>
@@ -210,8 +194,8 @@
                       <tfoot>
                         <tr>
                           <th>No</th>
-                          <th>Kecamatan</th>
-                          <th>Desa</th>
+                          <th>Jenis Layanan</th>
+                          <th>Hari</th>
                           <th>Aksi</th>
                         </tr>
                       </tfoot>
